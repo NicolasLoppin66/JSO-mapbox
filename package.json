@@ -28,5 +28,8 @@
     "style-loader": "^3.3.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^3.11.3"
+  },
+  "dependencies": {
+    "mapbox-gl": "^2.13.0"
   }
 }
