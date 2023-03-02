@@ -39,6 +39,24 @@ class App {
             center: { lng: 2.213749, lat: 46.227638 },
             zoom: 5.5
         });
+
+        // Click sur la carte
+        this.map.on('click', this.mapHandlerClickMap.bind(this));
+    }
+
+    mapHandlerClickMap(evt) {
+        console.log('-----');
+        console.log('lat :', evt.lngLat.lat);
+        console.log('lng :', evt.lngLat.lng);
+        console.log('-----');
+
+        const marker = new mapboxGl.Marker({
+            color: 'red'
+        });
+
+        marker.setLngLat(evt.lngLat);
+
+        marker.addTo(this.map);
     }
 }
 
