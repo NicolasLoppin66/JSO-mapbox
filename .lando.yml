@@ -1,4 +1,4 @@
-name: js-oop-webpack
+name: js-oop-mapbox
 services:
   node:
     type: node:16
